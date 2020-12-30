@@ -10,3 +10,15 @@ spring:
       use-new-id-generator-mappings: true
     show-sql: true
     generate-ddl: true
+  devtools:
+    restart:
+      enabled: true
+      additional-paths:
+        - src/main/java
+      exclude: WEB-INF/**
+  thymeleaf:
+    cache: false
+ # profiles:
+ #   active: dev
+server:
+  port: 8081
